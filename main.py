@@ -77,8 +77,8 @@ rain_check()
 time.sleep(2)
 
 
-EMAIL_ADRESS = 'kyle1443@gmail.com'
-EMAIL_PASSWORD = 'pqmfzzqjcckzmxfo'
+EMAIL_ADRESS = os.environ.get('EMAIL_USER')
+EMAIL_PASSWORD = os.environ.get('EMAIL_PASS')
 
 msg = EmailMessage()
 msg['Subject'] = 'Weather alert'
